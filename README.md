@@ -45,3 +45,25 @@ It is possible to have multiple Webpack configs and point the relevant config wh
         - Specifies a hashed name/location for the resolved files
 - `extensions`
   - Automatically resolves .js and .jsx extensions so they don't need to be included in imports/requires
+
+### Development Config
+
+- `mode`
+  - Sets Webpack mode to "development"
+- `devtool`
+  - Sets up source mapping development builds
+- `devserver`
+  - Settings for `webpack-dev-server`
+    - `contentBase`
+      - Specifies from where the dev server should serve the files
+    - `port`
+      - The port on which the server should run
+    - `open`
+      - Whether or not starting the server should open a browser tab on the relevant port
+    - `hot`
+      - Enables Hot Module Replacement (HMR), allowing modules to be updated at runtime without needing a full refresh
+
+### Production Config
+
+- `mode`
+  - Sets Webpack mode to "production"
