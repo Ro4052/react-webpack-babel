@@ -1,11 +1,7 @@
-require("dotenv").config();
 const path = require("path");
-
-const isDevelop = process.env.NODE_ENV === "development";
 
 module.exports = {
   entry: "./src/index.js",
-  devtool: isDevelop ? "source-map" : "eval-source-map",
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "bundle.js"
@@ -44,9 +40,5 @@ module.exports = {
       ".js",
       ".jsx"
     ]
-  },
-  devServer: {
-    contentBase: "public",
-    port: 3000
   }
-}
+};
