@@ -1,0 +1,44 @@
+{
+  "name": "react-webpack-babel",
+  "version": "1.0.0",
+  "description": "A basic example for manually setting up React with Webpack and Babel",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ro4052/react-webpack-babel.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "webpack",
+    "babel"
+  ],
+  "author": "Ronan Graham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ro4052/react-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/Ro4052/react-webpack-babel#readme",
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "dotenv": "^8.1.0",
+    "file-loader": "^4.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
