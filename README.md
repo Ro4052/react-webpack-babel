@@ -69,3 +69,15 @@ It is possible to have multiple Webpack configs and point the relevant config wh
 
 - `mode`
   - Sets Webpack mode to "production"
+
+## Tutorial
+
+Follow the git tags (from the tutorial branch) for a step-by-step approach to configuring this project:
+
+1. Basic React app with no CSS
+2. CSS importing
+3. CSS Modules
+4. Loading files (SVG in this tutorial)
+5. Resolving file extensions
+6. Separating Webpack configs
+7. Using kebab case with CSS Modules
