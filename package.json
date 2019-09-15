@@ -4,9 +4,9 @@
   "description": "A basic example for manually setting up React with Webpack and Babel",
   "main": ".public/bundle.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --config ./config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
   }
 }

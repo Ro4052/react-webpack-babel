@@ -1,10 +1,9 @@
 const path = require("path");
 
-module.exports = {
+module.exports = mode => ({
   entry: "./src/index.js",
-  devtool: "source-map",
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "../", "public"),
     filename: "bundle.js"
   },
   module: {
@@ -24,7 +23,11 @@ module.exports = {
         test: /\.css$/,
         loader: "css-loader",
         options: {
-          modules: true
+          modules: {
+            localIdentName: (
+              mode === "development" ? "[path][name]__[local]--[hash:base64:5]" : "[hash:base64]"
+            ),
+          }
         }
       },
       {
@@ -41,11 +44,5 @@ module.exports = {
       ".js",
       ".jsx"
     ]
-  },
-  devServer: {
-    contentBase: path.join(__dirname, "public"),
-    port: 3000,
-    open: true,
-    hot: true
   }
-};
+});
