@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-import jsLogo from "./js-logo.svg";
-import styles from "./App.css";
-
 class App extends Component {
   constructor() {
     super();
@@ -20,9 +17,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <img src={jsLogo} />
-        <p className={styles.count}>{this.state.count}</p>
-        <button className={styles.incrementButton} onClick={this.increment}>
+        <p>{this.state.count}</p>
+        <button onClick={this.increment}>
           Increment
         </button>
       </>
