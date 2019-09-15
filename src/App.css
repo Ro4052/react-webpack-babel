@@ -1,0 +1,15 @@
+.count {
+  font-size: 20px;
+}
+
+.incrementButton {
+  padding: 10px 50px;
+  background-color: #a79c9c;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.incrementButton:hover {
+  background-color: #cabdbd;
+}

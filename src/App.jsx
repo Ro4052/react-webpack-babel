@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import styles from "./App.css";
+
 class App extends Component {
   constructor() {
     super();
@@ -17,8 +19,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <p>{this.state.count}</p>
-        <button onClick={this.increment}>
+        <p className={styles.count}>{this.state.count}</p>
+        <button className={styles.incrementButton} onClick={this.increment}>
           Increment
         </button>
       </>
