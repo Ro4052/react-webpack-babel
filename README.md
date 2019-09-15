@@ -1,6 +1,6 @@
 # Basic React, Babel and Webpack Build
 
-This project was set up as a very basic example of how to setup a React app using Webpack and Babel. Some of the features of this build include:
+This project was set up as a very basic example of how to configure a React app using Webpack and Babel. Some of the features of this build include:
 
 - JS/JSX loading
   - Including extensions
@@ -9,7 +9,7 @@ This project was set up as a very basic example of how to setup a React app usin
   - Including CSS modules
 - SVG loading (among other file types)
 - Dev server
-- Source mapping (with appropriate environment variable)
+- Source mapping (depending on build mode)
 
 ## Babel Setup
 
