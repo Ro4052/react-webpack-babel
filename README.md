@@ -25,7 +25,7 @@ This project was set up as a very basic example of how to configure a React app 
 
 ## Webpack Setup
 
-It is possible to have multiple Webpack configs and point the relevant config when building, e.g. for production or development. `webpack-merge` can be used to combine specific configs with common ones. Below, are outlined the fields used in this Webpack setup:
+It is possible to have multiple Webpack configs and point the relevant config when building, e.g. for production or development. `webpack-merge` can be used to combine specific configs with common ones. It should be noted that Webpack rules appear as though in "reverse" as Webpack uses a nested model, rather than a sequential one, this is explained [here](https://stackoverflow.com/questions/43472333/webpack-2-loaders-declared-in-reverse). Below, are outlined the fields used in this Webpack setup:
 
 ### Common Config
 
