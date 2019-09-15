@@ -36,6 +36,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: [
+      ".js",
+      ".jsx"
+    ]
+  },
   devServer: {
     contentBase: path.join(__dirname, "public"),
     port: 3000,
