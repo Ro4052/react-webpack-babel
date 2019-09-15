@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = {
+module.exports = mode => ({
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../", "public"),
@@ -24,7 +24,9 @@ module.exports = {
         loader: "css-loader",
         options: {
           modules: {
-            localIdentName: '[path][name]__[local]--[hash:base64:5]',
+            localIdentName: (
+              mode === "development" ? "[path][name]__[local]--[hash:base64:5]" : "[hash:base64]"
+            ),
           },
           localsConvention: "camelCaseOnly"
         }
@@ -44,4 +46,4 @@ module.exports = {
       ".jsx"
     ]
   }
-};
+});
