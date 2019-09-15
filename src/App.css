@@ -2,7 +2,7 @@
   font-size: 20px;
 }
 
-.button {
+.increment-button {
   padding: 10px 50px;
   background-color: #a79c9c;
   border: none;
@@ -10,6 +10,6 @@
   border-radius: 5px;
 }
 
-.button:hover {
+.increment-button:hover {
   background-color: #cabdbd;
 }

@@ -22,7 +22,7 @@ class App extends Component {
       <>
         <img src={jsLogo} />
         <p className={styles.count}>{this.state.count}</p>
-        <button className={styles.button} onClick={this.increment}>
+        <button className={styles.incrementButton} onClick={this.increment}>
           Increment
         </button>
       </>

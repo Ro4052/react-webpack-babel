@@ -22,8 +22,11 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "css-loader",
-        query: {
-          modules: true
+        options: {
+          modules: {
+            localIdentName: '[path][name]__[local]--[hash:base64:5]',
+          },
+          localsConvention: "camelCaseOnly"
         }
       },
       {
