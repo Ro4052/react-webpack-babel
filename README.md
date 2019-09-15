@@ -76,6 +76,7 @@ Follow the git tags (from the tutorial branch) for a step-by-step approach to co
 
 1. Basic React app with no CSS
 2. CSS importing
+    - Note that the `style-loader` and `css-loader` rules could be combined by setting `use: ["style-loader", "css-loader"]` instead of `loader`
 3. CSS Modules
 4. Loading files (SVG in this tutorial)
 5. Resolving file extensions
